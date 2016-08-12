@@ -16,6 +16,7 @@ var AutoUseCheck = function () {
     
     Game.ScriptLogMsg('Script disabled: AutoUse v0.4.1', '#00ff00')
     GameEvents.SendEventClientSide('antiaddiction_toast', { "message": "Скрипт диактивирован в связи с обновлением!\nОбновление 15 августа", "duration": "15" })
+    AutoUse.checked = false;
 }
 
 //Шаблон для добавление чекбокса
