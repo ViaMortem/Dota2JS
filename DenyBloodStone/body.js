@@ -10,8 +10,9 @@ var DenyBloodStoneCheck = function () {
         return
     }
 
-    Game.ScriptLogMsg('Script enabled: DenyBloodStone', '#00ff00')
+    Game.ScriptLogMsg('Script disabled: DenyBloodStone', '#00ff00')
     GameEvents.SendEventClientSide('antiaddiction_toast', { "message": "Скрипт диактивирован в связи с обновлением!\nОбновление 15 августа", "duration": "15" })
+    DenyBloodStone.checked = false;
 }
 
 
